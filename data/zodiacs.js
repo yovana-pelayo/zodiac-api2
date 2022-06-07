@@ -72,4 +72,4 @@ const zodiacs = [
     symbol: 'Virgin',
   },
 ];
-module.exports(zodiacs);
+module.exports = { zodiacs };
