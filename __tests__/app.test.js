@@ -18,7 +18,7 @@ describe('zodiac-api2 routes', () => {
     expect(res.body).toEqual(expected);
   });
   it('/zodiac/:id should return zodiac detail', async () => {
-    const res = await request(app).get('/zodiacsgit add /11');
+    const res = await request(app).get('/zodiacs/11');
     const taurus = {
       id: '11',
       name: 'taurus',
@@ -26,7 +26,8 @@ describe('zodiac-api2 routes', () => {
       symbol: 'Bull',
     };
     expect(res.body).toEqual(taurus);
-  }) - zodiacs;
+  });
+  -zodiacs;
 
   afterAll(() => {
     pool.end();
